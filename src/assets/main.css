@@ -1,0 +1,48 @@
+/* Main styles */
+@font-face {
+  font-family: "T2_textsans";
+  src: url(../assets/fonts/tele2_textsans-regular.ttf);
+}
+
+:root {
+  --white-color: #FFFFFF;
+  --dark-color: #1F2229;
+  --gray-color: #7C8792;
+  --blue-color: #3FCBFF;
+}
+
+body {
+  font-family: "T2_textsans" !important;
+}
+
+.bg-white-color {
+  background-color: var(--white-color);
+}
+
+.bg-dark-color {
+  background-color: var(--dark-color);
+}
+
+.text-color-white {
+  color: var(--white-color);
+}
+
+.text-color-dark {
+  color: var(--dark-color);
+}
+
+.text-color-gray {
+  color: var(--gray-color);
+}
+
+/* Для vue transition */
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
